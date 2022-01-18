@@ -7,7 +7,7 @@
         >
             <p-card id="{{ image.id }}" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
-                    <img loading="lazy" src="{{ image.url }}">
+                    <img loading="lazy" src="{{ image.url }}" (error)="updateUrl($event)">
                 </ng-template>
 
                 <ng-template pTemplate="content">

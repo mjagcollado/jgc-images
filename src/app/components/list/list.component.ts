@@ -9,4 +9,8 @@ import { Image } from 'src/app/model/core.model';
 })
 export class ListComponent {
   @Input() imageList: Image[] = [];
+
+  updateUrl(event: any): void {
+    event.target.src = "./../assets/no-image.png";
+  }
 }
