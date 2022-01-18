@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="list row">
+        <div
+            class="list__image col-12 col-sm-6 col-md-4 col-lg-3"
+            *ngFor="let image of imageList"
+        >
+            <p-card id="{{ image.id }}" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img loading="lazy" src="{{ image.url }}">
+                </ng-template>
+
+                <ng-template pTemplate="content">
+                    {{ image.description }}
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

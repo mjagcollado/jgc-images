@@ -1,0 +1,13 @@
+.list {
+    &__image {
+        font-weight: 600;
+        padding: 15px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .list {
+        padding: 0 15px;
+    }
+}
